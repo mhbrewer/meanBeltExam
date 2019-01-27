@@ -1,0 +1,37 @@
+<h3>Add a Pet</h3>
+
+<div style="color:red;" *ngIf="myErrors">
+  {{ myErrors.message }}
+</div>
+<form>
+  <label>Name:</label>
+  <input
+    type = "text"
+    name = "newPet.name"
+    [(ngModel)] = "newPet.name">
+  <label>Type:</label>
+  <input
+    type = "text"
+    name = "newPet.type"
+    [(ngModel)] = "newPet.type">
+  <label>Description:</label>
+  <input
+    type = "text"
+    name = "newPet.description"
+    [(ngModel)] = "newPet.description">
+  <label>Skills:</label>
+  <input
+    type = "text"
+    name = "newPet.skills0"
+    [(ngModel)] = "newPet.skills[0]">
+    <input
+    type = "text"
+    name = "newPet.skills1"
+    [(ngModel)] = "newPet.skills[1]">
+    <input
+    type = "text"
+    name = "newPet.skills2"
+    [(ngModel)] = "newPet.skills[2]">
+</form>
+<button class="tableButton" (click)="newPetSubmit()">Create</button>
+<button class="tableButton" (click)="cancel()">Cancel</button>

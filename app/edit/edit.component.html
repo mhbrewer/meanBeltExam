@@ -1,0 +1,39 @@
+
+
+<div *ngIf="currentPet">
+    <div style="color:red;" *ngIf="myErrors">
+        {{ myErrors.message }}
+      </div>
+      <form>
+        <label>Name:</label>
+        <input
+          type = "text"
+          name = "currentPet.name"
+          [(ngModel)] = "currentPet.name">
+        <label>Type:</label>
+        <input
+          type = "text"
+          name = "currentPet.type"
+          [(ngModel)] = "currentPet.type">
+        <label>Description:</label>
+        <input
+          type = "text"
+          name = "currentPet.description"
+          [(ngModel)] = "currentPet.description">
+        <label>Skills:</label>
+        <input
+          type = "text"
+          name = "currentPet.skills0"
+          [(ngModel)] = "currentPet.skills[0]">
+          <input
+          type = "text"
+          name = "currentPet.skills1"
+          [(ngModel)] = "currentPet.skills[1]">
+          <input
+          type = "text"
+          name = "currentPet.skills2"
+          [(ngModel)] = "currentPet.skills[2]">
+      </form>
+      <button class="tableButton" (click)="editPetSubmit()">Submit</button>
+      <button class="tableButton" [routerLink]="['/pets', petId]">Cancel</button>
+</div>

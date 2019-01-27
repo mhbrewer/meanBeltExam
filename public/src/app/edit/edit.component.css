@@ -1,0 +1,23 @@
+* {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.tableButton {
+    margin: 10px;
+    padding: 5px;
+    background-color: blue;
+    border-color: black;
+    color: white;
+}
+input {
+    display: block;
+    border: 1px solid black;
+    margin: 5px;
+}

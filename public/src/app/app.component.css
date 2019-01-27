@@ -1,0 +1,19 @@
+* {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navButton {
+    background-color: white;
+    color: blue;
+}
+.navTitle {
+    font-size: 30px;
+}
+

@@ -1,0 +1,19 @@
+
+<div *ngIf="currentPet">
+  <p>ID: {{ currentPet._id }}</p>
+  <p>Name: {{ currentPet.name }}</p>
+  <p>Type: {{ currentPet.type }}</p>
+  <p>Description: {{ currentPet.description }}</p>
+  <p>Skills:</p>
+  <ul>
+    <li *ngFor="let skill of currentPet.skills">
+      {{ skill }}
+    </li>
+  </ul>
+  <p>Likes: {{ currentPet.likes }}</p>
+  <button class="tableButton" (click)="adoptPet()">Adopt this pet!</button>
+  <button class="tableButton" *ngIf="!liked; else block" (click)="likePet()">Like Pet</button>
+  <ng-template #block>
+    Thanks for liking this pet :)
+  </ng-template>
+</div>

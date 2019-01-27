@@ -1,0 +1,33 @@
+* {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+table {
+    margin: 20px;
+}
+.subTitle {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 20px;
+}
+tr {
+    padding: 10px;
+}
+.tableButton {
+    margin: 10px;
+    padding: 5px;
+    background-color: blue;
+    border-color: black;
+    color: white;
+}
+.b2 {
+    display: inline-block;
+    background-color: white;
+    color: blue;
+}
